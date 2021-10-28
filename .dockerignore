@@ -1,0 +1,6 @@
+# ignore all files and directories
+*
+
+# include only
+!src
+!package*.json
