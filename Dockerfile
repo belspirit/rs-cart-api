@@ -1,6 +1,6 @@
 # Base
 FROM node:12-alpine
-WORKDIR /app
+WORKDIR app
 
 # Dependencies
 COPY package*.json ./

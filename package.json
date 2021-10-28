@@ -8,6 +8,10 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
+    "eb:init": "eb init -r us-east-1",
+    "eb:create": "eb create --single --cname belspirit-cart-api-dev",
+    "eb:create2": "eb create development --single --envvars NODE_ENV=production,ENV_CONFIG=dev",
+    "deploy": "eb deploy",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
